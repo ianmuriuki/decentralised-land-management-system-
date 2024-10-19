@@ -1,0 +1,38 @@
+{
+  "canisters": {
+    "helcon_backend": {
+      "candid": "src/helcon_backend/helcon_backend.did",
+      "package": "helcon_backend",
+      "type": "rust"
+    },
+    "land_system_frontend": {
+      "dependencies": [
+        "helcon_backend"
+      ],
+      "source": [
+        "src/land_system_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "land_system_frontend"
+    },
+    "internet_identity": {
+      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+      "frontend": {},
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      },
+      "type": "custom",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

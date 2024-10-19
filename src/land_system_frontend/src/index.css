@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.loader {
+  border-color: transparent;
+  border-top-color: #2E7D32;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
